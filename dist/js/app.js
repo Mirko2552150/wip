@@ -93,28 +93,17 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// alert('ciao');
-// const post = document.getElementsByClassName('.card-trigger');
-//
-// console.log(post);
-//
-// const li = document.querySelectorAll(".card-trigger");
-// console.log(li);
-//
-// post.addEventListener('click', event => {
-//   // post.innerHTML = 'ciao';
-//   alert('click sul post');
-//
-// });
-// var element = querySelector('card-trigger li');
-// console.log(element);
-// const button = document.querySelector('li');
-//
-// button.addEventListener('click', event => {
-//   button.innerHTML = `Click count: ${event.detail}`;
-// });
-var link = 'card-trigger li';
-element.click(link);
+var content = document.getElementById('content');
+var content = document.getElementById('show-more');
+var button = document.getElementById('button');
+
+button.onclick = function () {
+  fetch('https://jsonplaceholder.typicode.com/posts/1').then(function (response) {
+    return response.json();
+  }).then(function (data) {
+    return console.log(data);
+  });
+};
 
 /***/ }),
 

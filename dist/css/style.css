@@ -31,9 +31,33 @@ body ul li {
   /* elementi su singola riga */
   width: calc(100% / 3);
   border: 1px solid black;
+  position: relative;
 }
 
 body ul li a {
   text-decoration: none;
+}
+
+body ul li button {
+  background: #3498db;
+  width: 180px;
+  padding: 4px 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+body ul li button:hover {
+  cursor: pointer;
+}
+
+body ul li button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  opacity: 0.4;
 }
 

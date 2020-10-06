@@ -1,27 +1,14 @@
-// alert('ciao');
 
-// const post = document.getElementsByClassName('.card-trigger');
-//
-// console.log(post);
-//
-// const li = document.querySelectorAll(".card-trigger");
-// console.log(li);
-//
-// post.addEventListener('click', event => {
-//   // post.innerHTML = 'ciao';
-//   alert('click sul post');
-//
-// });
+var content = document.getElementById('content');
 
-// var element = querySelector('card-trigger li');
-// console.log(element);
+var content = document.getElementById('show-more');
 
-// const button = document.querySelector('li');
-//
-// button.addEventListener('click', event => {
-//   button.innerHTML = `Click count: ${event.detail}`;
-// });
+var button = document.getElementById('button');
 
-const link = 'card-trigger li';
+button.onclick = function() {
 
-element.click(link);
+  fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then(response => response.json())
+  .then(data => console.log(data))
+
+}
