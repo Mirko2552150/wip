@@ -4,25 +4,29 @@
     <meta charset="utf-8">
     <title>Wip</title>
     <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.5/es6-shim.min.js" integrity="sha512-TDAQ62rZVhN786R3XzezagGwkcsh9FD3Wd444mJoVY0In+Y9hVx7LUZstmp9vFk7J/itXVf7G0KsXRNk6W/HaQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   </head>
   <body>
+    <div class="icon">
+      <i class="fas fa-times"></i>
+    </div>
     <ul id="card-trigger">
-      <li>
+      <li id="button">
         <a class="content" href="javascript:void(0)" data-sku="7">post 7</a>
-        <button id="button" type="button" name="button">show</button>
       </li>
-      <li>
+      <li id="button-due">
         <a class="content-due" href="javascript:void(0)" data-sku="3">post 3</a>
-        <button id="button-due" type="button" name="button">show</button>
       </li>
-      <li>
+      <li id="button-tre">
         <a class="content-tre" href="javascript:void(0)" data-sku="2">post 2</a>
-        <button id="button-tre" type="button" name="button">show</button>
       </li>
     </ul>
+    <div class="card-uno"></div>
+    <div class="card-due"></div>
+    <div class="card-tre"></div>
 
-    <a href="javascript:void(0)" id="remover">remove cards</a>
-
+    <!-- <a href="javascript:void(0)" id="remover">remove cards</a> -->
     <div id="cards-holder"></div>
 
 

@@ -98,8 +98,21 @@ document.getElementById('button').addEventListener("click", function () {
   console.log(dataSku);
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSku).then(function (response) {
     return response.json();
-  }).then(function (data) {
-    return console.log(data.title);
+  }).then(function (response) {
+    // console.log(response);
+    // var title = response.title;
+    // var body = response.body;
+    // function myFunction() {
+    //   var element = document.querySelector("card-tre");
+    //   element.classList.add("active");
+    // }
+    var faqToggle = document.getElementsByTagName('card-tre');
+
+    if (faqToggle.classList.contains('active')) {
+      faqToggle.classList.remove('active'); // alert("remove faq display!");
+    } else {
+      faqToggle.classList.add('active'); // alert("add faq display!");
+    }
   });
 });
 document.getElementById('button-due').addEventListener("click", function () {
@@ -107,8 +120,21 @@ document.getElementById('button-due').addEventListener("click", function () {
   console.log(dataSkuDue);
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSkuDue).then(function (response) {
     return response.json();
-  }).then(function (data) {
-    return console.log(data.title);
+  }).then(function (response) {
+    // console.log(response);
+    // var title = response.title;
+    // var body = response.body;
+    // function myFunction() {
+    //   var element = document.querySelector("card-tre");
+    //   element.classList.add("active");
+    // }
+    var faqToggle = document.getElementsByTagName('card-tre');
+
+    if (faqToggle.classList.contains('active')) {
+      faqToggle.classList.remove('active'); // alert("remove faq display!");
+    } else {
+      faqToggle.classList.add('active'); // alert("add faq display!");
+    }
   });
 });
 document.getElementById('button-tre').addEventListener("click", function () {
@@ -116,8 +142,21 @@ document.getElementById('button-tre').addEventListener("click", function () {
   console.log(dataSkuTre);
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSkuTre).then(function (response) {
     return response.json();
-  }).then(function (data) {
-    return console.log(data.title);
+  }).then(function (response) {
+    // console.log(response);
+    // var title = response.title;
+    // var body = response.body;
+    // function myFunction() {
+    //   var element = document.querySelector("card-tre");
+    //   element.classList.add("active");
+    // }
+    var faqToggle = document.getElementsByTagName('card-tre');
+
+    if (faqToggle.classList.contains('active')) {
+      faqToggle.classList.remove('active'); // alert("remove faq display!");
+    } else {
+      faqToggle.classList.add('active'); // alert("add faq display!");
+    }
   });
 });
 

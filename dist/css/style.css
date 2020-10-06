@@ -10,6 +10,29 @@ body {
   height: 100vh;
 }
 
+body .card-uno,
+body .card-due,
+body .card-tre {
+  background-color: black;
+  float: left;
+  width: calc(100% / 3);
+  height: 300px;
+  border: 1px solid white;
+  display: none;
+}
+
+body .active {
+  display: block;
+}
+
+body .icon {
+  display: none;
+}
+
+body .icon i {
+  font-size: 40px;
+}
+
 body ul {
   background-color: white;
   width: 100vw;
@@ -20,7 +43,6 @@ body ul {
   padding: 0;
   list-style: none;
   cursor: pointer;
-  height: 70px;
 }
 
 body ul li {
@@ -40,12 +62,11 @@ body ul li a {
 
 body ul li button {
   background: #3498db;
-  width: 180px;
+  width: 20px;
   padding: 4px 0;
   position: absolute;
   right: 0;
   bottom: 0;
-  border-radius: 5px;
 }
 
 body ul li button:hover {
@@ -59,5 +80,33 @@ body ul li button:after {
   width: 100%;
   height: 10%;
   opacity: 0.4;
+}
+
+@media (min-width: 0px) and (max-width: 950px) {
+  body {
+    position: relative;
+  }
+
+  body .icon {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  body ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-end;
+    width: 33%;
+    display: none;
+  }
+
+  body ul li {
+    background-color: green;
+    width: 100vw;
+    height: 100px;
+    border: 1px solid white;
+  }
 }
 

@@ -3,10 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: pink;
   width: 100vw;
   height: 100vh;
+
+
+
+  .card-uno, .card-due, .card-tre {
+    background-color: black;
+    float: left;
+    width: calc(100% / 3);
+    height: 300px;
+    border: 1px solid white;
+    display: none;
+
+  }
+
+  .active {
+    display: block;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .icon i {
+    font-size: 40px;
+  }
 
   ul {
     background-color: white;
@@ -18,8 +43,6 @@ body {
     padding: 0;
     list-style: none;
     cursor: pointer;
-    height: 70px;
-
     li {
       line-height: 70px;
       text-align: center;
@@ -28,17 +51,19 @@ body {
       width: calc(100% / 3);
       border: 1px solid black;
       position: relative;
+
       a {
         text-decoration: none;
       }
+
       button {
         background: #3498db;
-        width: 180px;
+        width: 20px;
         padding: 4px 0;
         position: absolute;
         right: 0;
         bottom: 0;
-        border-radius: 5px;
+
         &:hover {
           cursor: pointer;
         }
@@ -52,6 +77,34 @@ body {
           opacity: 0.4;
 
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 950px) {
+  body {
+    position: relative;
+
+    .icon {
+      display: block;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      align-items: flex-end;
+      width: 33%;
+      display: none;
+      li {
+        background-color: green;
+        width: 100vw;
+        height: 100px;
+        border: 1px solid white;
+
       }
     }
   }
