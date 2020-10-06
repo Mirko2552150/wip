@@ -14,6 +14,7 @@ let mix = require('laravel-mix');
 // mix.js('src/js/app.js', 'dist/js/app.js').sass('src/scss/app.scss', 'dist/css/app.css'); // metodo con in ingresso ORIGINE E DESTINAZIONE
 
 mix.sass('src/scss/app.scss', 'dist/css/style.css');
+mix.js('src/js/app.js', 'dist/js/app.js');
 
 // Full API
 // mix.js(src, output);
