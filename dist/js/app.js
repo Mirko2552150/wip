@@ -93,12 +93,6 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var button = document.getElementById('button'); // var dataSku = document.querySelector('.content').getAttribute('data-sku');
-//
-// var dataSkuOb = { 0: dataSku}
-// console.log(dataSkuOb);
-// document.querySelector('.content').addEventListener("click", dataSkuOb);
-
 document.getElementById('button').addEventListener("click", function () {
   var dataSku = document.querySelector('.content').getAttribute('data-sku');
   console.log(dataSku);
@@ -125,19 +119,7 @@ document.getElementById('button-tre').addEventListener("click", function () {
   }).then(function (data) {
     return console.log(data.title);
   });
-}); // button.onclick = function() {
-//
-//
-//   var dataSku = document.querySelector('.content').getAttribute('data-sku');
-//   console.log(self.dataSku); //
-//
-//   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSku)
-//   .then(response => response.json())
-//   .then(data => console.log(data.title)
-//
-//   )
-//
-// }
+});
 
 /***/ }),
 

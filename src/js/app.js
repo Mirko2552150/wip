@@ -1,13 +1,3 @@
-
-var button = document.getElementById('button');
-// var dataSku = document.querySelector('.content').getAttribute('data-sku');
-//
-// var dataSkuOb = { 0: dataSku}
-// console.log(dataSkuOb);
-
-
-// document.querySelector('.content').addEventListener("click", dataSkuOb);
-
 document.getElementById('button').addEventListener("click", function(){
 
   var dataSku = document.querySelector('.content').getAttribute('data-sku');
@@ -52,17 +42,3 @@ document.getElementById('button-tre').addEventListener("click", function(){
 
 
 });
-
-// button.onclick = function() {
-//
-//
-//   var dataSku = document.querySelector('.content').getAttribute('data-sku');
-//   console.log(self.dataSku); //
-//
-//   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSku)
-//   .then(response => response.json())
-//   .then(data => console.log(data.title)
-//
-//   )
-//
-// }
