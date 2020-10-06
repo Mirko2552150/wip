@@ -94,6 +94,16 @@
 /***/ (function(module, exports) {
 
 alert('ciao');
+
+/***/ }),
+
+/***/ "./src/js/app2.js":
+/*!************************!*\
+  !*** ./src/js/app2.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
 alert('ciao due');
 
 /***/ }),
@@ -110,13 +120,14 @@ alert('ciao due');
 /***/ }),
 
 /***/ 0:
-/*!*************************************************!*\
-  !*** multi ./src/js/app.js ./src/scss/app.scss ***!
-  \*************************************************/
+/*!******************************************************************!*\
+  !*** multi ./src/js/app.js ./src/js/app2.js ./src/scss/app.scss ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\vavy_\OneDrive\Desktop\wip\wip\src\js\app.js */"./src/js/app.js");
+__webpack_require__(/*! C:\Users\vavy_\OneDrive\Desktop\wip\wip\src\js\app2.js */"./src/js/app2.js");
 module.exports = __webpack_require__(/*! C:\Users\vavy_\OneDrive\Desktop\wip\wip\src\scss\app.scss */"./src/scss/app.scss");
 
 
