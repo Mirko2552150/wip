@@ -9,22 +9,31 @@
   </head>
   <body>
     <div class="icon">
-      <i class="fas fa-times"></i>
+      <!-- <i class="fas fa-times"></i> -->
+      <i class="fas fa-bars"></i>
     </div>
     <ul id="card-trigger">
       <li id="button">
-        <a class="content" href="javascript:void(0)" data-sku="7">post 7</a>
+        <a class="content" href="javascript:void(0)" data-sku="7">POST 7</a>
       </li>
       <li id="button-due">
-        <a class="content-due" href="javascript:void(0)" data-sku="3">post 3</a>
+        <a class="content-due" href="javascript:void(0)" data-sku="3">POST 3</a>
       </li>
       <li id="button-tre">
-        <a class="content-tre" href="javascript:void(0)" data-sku="2">post 2</a>
+        <a class="content-tre" href="javascript:void(0)" data-sku="2">POST 2</a>
       </li>
     </ul>
-    <div class="card-uno"></div>
-    <div class="card-due"></div>
-    <div class="card-tre"></div>
+    <div class="box">
+      <div class="box-inside">
+        <div id="card-uno" class="card"></div>
+      </div>
+      <div class="box-inside">
+        <div id="card-due" class="card"></div>
+      </div>
+      <div class="box-inside">
+        <div id="card-tre" class="card"></div>
+      </div>
+    </div>
 
     <!-- <a href="javascript:void(0)" id="remover">remove cards</a> -->
     <div id="cards-holder"></div>

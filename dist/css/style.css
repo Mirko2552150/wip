@@ -5,23 +5,30 @@
 }
 
 body {
-  background-color: pink;
+  background-color: white;
   width: 100vw;
   height: 100vh;
+  font-family: sans-serif;
 }
 
-body .card-uno,
-body .card-due,
-body .card-tre {
-  background-color: black;
-  float: left;
+body .box {
+  width: 100%;
+}
+
+body .box .box-inside {
   width: calc(100% / 3);
+  float: left;
+  height: 300px;
+}
+
+body .box .box-inside .card {
+  background-color: black;
   height: 300px;
   border: 1px solid white;
   display: none;
 }
 
-body .active {
+body .box .box-inside .active {
   display: block;
 }
 

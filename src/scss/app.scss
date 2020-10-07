@@ -5,24 +5,32 @@
 }
 
 body {
-  background-color: pink;
+  background-color: white;
   width: 100vw;
   height: 100vh;
+  font-family: sans-serif;
 
+  .box {
+    width: 100%;
 
+    .box-inside {
+      width: calc(100% / 3);
+      float: left;
+      height: 300px;
 
-  .card-uno, .card-due, .card-tre {
-    background-color: black;
-    float: left;
-    width: calc(100% / 3);
-    height: 300px;
-    border: 1px solid white;
-    display: none;
+      .card {
+        background-color: black;
+        // width: calc(100% / 3);
+        height: 300px;
+        border: 1px solid white;
+        display: none;
 
-  }
+      }
 
-  .active {
-    display: block;
+      .active {
+        display: block;
+      }
+    }
   }
 
   .icon {
@@ -43,6 +51,7 @@ body {
     padding: 0;
     list-style: none;
     cursor: pointer;
+
     li {
       line-height: 70px;
       text-align: center;
