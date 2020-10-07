@@ -94,68 +94,105 @@
 /***/ (function(module, exports) {
 
 document.getElementById('button').addEventListener("click", function () {
-  var dataSku = document.querySelector('.content').getAttribute('data-sku');
-  console.log(dataSku);
+  var dataSku = document.querySelector('.content').getAttribute('data-sku'); // console.log(dataSku);
+
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSku).then(function (response) {
     return response.json();
   }).then(function (response) {
-    console.log(response);
+    // console.log(response);
     var title = response.title;
     var body = response.body;
+    var id = response.id;
     var faqToggle = document.getElementById('card-uno');
+    var faqToggleDue = document.getElementById('card-due');
+    var faqToggleTre = document.getElementById('card-tre');
 
     if (faqToggle.classList.contains('active')) {
-      faqToggle.classList.remove('active');
-      faqToggle.innerHTML = "";
+      // se card si vede
+      faqToggle.classList.remove('active'); // al click nascondilo
+
+      faqToggle.innerHTML = ""; // cancella in contenuto stampato
     } else {
-      faqToggle.classList.add('active'); // faqToggle.innerHTML= title + '<br>' + body;
+      if (faqToggleDue.classList.contains('active') || faqToggleTre.classList.contains('active')) {
+        faqToggleDue.classList.remove('active');
+        faqToggleTre.classList.remove('active');
+        faqToggleDue.innerHTML = ""; // cancella in contenuto stampato
+
+        faqToggleTre.innerHTML = ""; // cancella in contenuto stampato
+      }
+
+      faqToggle.classList.remove('active'); // altrimenti, se non si vede
+
+      faqToggle.classList.add('active'); // rendilo visibile e stampa il testo
 
       setTimeout(function () {
-        faqToggle.innerHTML = title + '<br>' + body;
+        faqToggle.innerHTML = 'POST' + "" + id + '<br>' + title + '<br>' + body;
       }, 300);
     }
   });
 });
 document.getElementById('button-due').addEventListener("click", function () {
-  var dataSkuDue = document.querySelector('.content-due').getAttribute('data-sku');
-  console.log(dataSkuDue);
+  var dataSkuDue = document.querySelector('.content-due').getAttribute('data-sku'); // console.log(dataSkuDue);
+
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSkuDue).then(function (response) {
     return response.json();
   }).then(function (response) {
     console.log(response);
     var title = response.title;
     var body = response.body;
-    var faqToggle = document.getElementById('card-due');
+    var id = response.id;
+    var faqToggle = document.getElementById('card-uno');
+    var faqToggleDue = document.getElementById('card-due');
+    var faqToggleTre = document.getElementById('card-tre');
 
-    if (faqToggle.classList.contains('active')) {
-      faqToggle.classList.remove('active');
-      faqToggle.innerHTML = "";
+    if (faqToggleDue.classList.contains('active')) {
+      faqToggleDue.classList.remove('active');
+      faqToggleDue.innerHTML = "";
     } else {
-      faqToggle.classList.add('active');
+      if (faqToggle.classList.contains('active') || faqToggleTre.classList.contains('active')) {
+        faqToggle.classList.remove('active');
+        faqToggleTre.classList.remove('active');
+        faqToggle.innerHTML = ""; // cancella in contenuto stampato
+
+        faqToggleTre.innerHTML = ""; // cancella in contenuto stampato
+      }
+
+      faqToggleDue.classList.add('active');
       setTimeout(function () {
-        faqToggle.innerHTML = title + '<br>' + body;
+        faqToggleDue.innerHTML = 'POST' + "" + id + '<br>' + title + '<br>' + body;
       }, 300);
     }
   });
 });
 document.getElementById('button-tre').addEventListener("click", function () {
-  var dataSkuTre = document.querySelector('.content-tre').getAttribute('data-sku');
-  console.log(dataSkuTre);
+  var dataSkuTre = document.querySelector('.content-tre').getAttribute('data-sku'); // console.log(dataSkuTre);
+
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSkuTre).then(function (response) {
     return response.json();
   }).then(function (response) {
     console.log(response);
     var title = response.title;
     var body = response.body;
-    var faqToggle = document.getElementById('card-tre');
+    var id = response.id;
+    var faqToggle = document.getElementById('card-uno');
+    var faqToggleDue = document.getElementById('card-due');
+    var faqToggleTre = document.getElementById('card-tre');
 
-    if (faqToggle.classList.contains('active')) {
-      faqToggle.classList.remove('active');
-      faqToggle.innerHTML = "";
+    if (faqToggleTre.classList.contains('active')) {
+      faqToggleTre.classList.remove('active');
+      faqToggleTre.innerHTML = "";
     } else {
-      faqToggle.classList.add('active');
+      if (faqToggleDue.classList.contains('active') || faqToggleTre.classList.contains('active')) {
+        faqToggle.classList.remove('active');
+        faqToggleDue.classList.remove('active');
+        faqToggle.innerHTML = ""; // cancella in contenuto stampato
+
+        faqToggleDue.innerHTML = ""; // cancella in contenuto stampato
+      }
+
+      faqToggleTre.classList.add('active');
       setTimeout(function () {
-        faqToggle.innerHTML = title + '<br>' + body;
+        faqToggleTre.innerHTML = 'POST' + "" + id + '<br>' + title + '<br>' + body;
       }, 300);
     }
   });
@@ -170,7 +207,18 @@ document.getElementById('button-tre').addEventListener("click", function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// alert('ciao due');
+document.getElementById('bars').addEventListener("click", function () {
+  var iconBars = document.getElementById('bars');
+  var nav = document.getElementById('card-trigger');
+
+  if (iconBars.classList.contains('rotate')) {
+    iconBars.classList.remove('rotate');
+    nav.classList.remove('visible');
+  } else {
+    iconBars.classList.add('rotate');
+    nav.classList.add('visible');
+  }
+});
 
 /***/ }),
 
