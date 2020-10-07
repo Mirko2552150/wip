@@ -22,14 +22,17 @@ body .box .box-inside {
 }
 
 body .box .box-inside .card {
-  background-color: black;
+  background-color: blue;
   height: 300px;
-  border: 1px solid white;
-  display: none;
+  height: 0%;
+  transition-duration: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body .box .box-inside .active {
-  display: block;
+  height: 100%;
 }
 
 body .icon {
@@ -53,18 +56,23 @@ body ul {
 }
 
 body ul li {
+  background-color: blue;
   line-height: 70px;
   text-align: center;
   display: block;
   float: left;
   /* elementi su singola riga */
   width: calc(100% / 3);
-  border: 1px solid black;
   position: relative;
+}
+
+body ul li:hover {
+  transition-duration: 1s;
 }
 
 body ul li a {
   text-decoration: none;
+  color: black;
 }
 
 body ul li button {
@@ -113,7 +121,6 @@ body ul li button:after {
     background-color: green;
     width: 100vw;
     height: 100px;
-    border: 1px solid white;
   }
 }
 

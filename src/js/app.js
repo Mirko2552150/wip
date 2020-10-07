@@ -9,18 +9,16 @@ document.getElementById('button').addEventListener("click", function(){
     console.log(response);
     var title = response.title;
     var body = response.body;
-    // function myFunction() {
-    //   var element = document.querySelector("card-tre");
-    //   element.classList.add("active");
-    // }
 
     var faqToggle = document.getElementById('card-uno');
     if (faqToggle.classList.contains('active')) {
       faqToggle.classList.remove('active');
-      // alert("remove faq display!");
+      faqToggle.innerHTML= "";
+
     } else {
       faqToggle.classList.add('active');
-      // alert("add faq display!");
+      // faqToggle.innerHTML= title + '<br>' + body;
+      setTimeout(function(){ faqToggle.innerHTML= title + '<br>' + body; }, 300);
     }
    }
   )
@@ -38,18 +36,16 @@ document.getElementById('button-due').addEventListener("click", function(){
     console.log(response);
     var title = response.title;
     var body = response.body;
-    // function myFunction() {
-    //   var element = document.querySelector("card-tre");
-    //   element.classList.add("active");
-    // }
 
     var faqToggle = document.getElementById('card-due');
     if (faqToggle.classList.contains('active')) {
       faqToggle.classList.remove('active');
-      // alert("remove faq display!");
+      faqToggle.innerHTML= "";
+
     } else {
       faqToggle.classList.add('active');
-      // alert("add faq display!");
+      setTimeout(function(){ faqToggle.innerHTML= title + '<br>' + body; }, 300);
+
     }
    }
   )
@@ -67,18 +63,16 @@ document.getElementById('button-tre').addEventListener("click", function(){
       console.log(response);
       var title = response.title;
       var body = response.body;
-      // function myFunction() {
-      //   var element = document.querySelector("card-tre");
-      //   element.classList.add("active");
-      // }
 
       var faqToggle = document.getElementById('card-tre');
       if (faqToggle.classList.contains('active')) {
         faqToggle.classList.remove('active');
-        // alert("remove faq display!");
+        faqToggle.innerHTML= "";
+
       } else {
         faqToggle.classList.add('active');
-        // alert("add faq display!");
+        setTimeout(function(){ faqToggle.innerHTML= title + '<br>' + body; }, 300);
+
       }
    }
   )
