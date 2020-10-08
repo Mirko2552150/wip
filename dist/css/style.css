@@ -30,6 +30,15 @@ body .box .box-inside .card {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+body .box .box-inside .card h2 {
+  text-align: center;
+}
+
+body .box .box-inside .card p {
+  text-align: center;
 }
 
 body .box .box-inside .active {

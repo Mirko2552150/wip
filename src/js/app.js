@@ -28,7 +28,7 @@ document.getElementById('button').addEventListener("click", function(){
 
       faqToggle.classList.remove('active'); // altrimenti, se non si vede
       faqToggle.classList.add('active'); // rendilo visibile e stampa il testo
-      setTimeout(function(){ faqToggle.innerHTML= 'POST' + "" + id + '<br>' + title + '<br>' + body; }, 300);
+      setTimeout(function(){ faqToggle.innerHTML= '<h1>' + 'POST' + " " + id + '</h1>' + '<br>' + '<h2>' + title + '</h2>' + '<br>' + '<p>' + body + '</p>'; }, 300);
     }
    }
   )
@@ -65,7 +65,7 @@ document.getElementById('button-due').addEventListener("click", function(){
       }
 
       faqToggleDue.classList.add('active');
-      setTimeout(function(){ faqToggleDue.innerHTML= 'POST' + "" + id + '<br>' + title + '<br>' + body; }, 300);
+      setTimeout(function(){ faqToggleDue.innerHTML= '<h1>' + 'POST' + " " + id + '</h1>' + '<br>' + '<h2>' + title + '</h2>' + '<br>' + '<p>' + body + '</p>'; }, 300);
 
     }
    }
@@ -102,7 +102,7 @@ document.getElementById('button-tre').addEventListener("click", function(){
         }
 
         faqToggleTre.classList.add('active');
-        setTimeout(function(){ faqToggleTre.innerHTML= 'POST' + "" + id + '<br>' + title + '<br>' + body; }, 300);
+        setTimeout(function(){ faqToggleTre.innerHTML= '<h1>' + 'POST' + " " + id + '</h1>' + '<br>' + '<h2>' + title + '</h2>' + '<br>' + '<p>' + body + '</p>'; }, 300);
 
       }
    }
