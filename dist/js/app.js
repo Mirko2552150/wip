@@ -95,9 +95,9 @@
 
 document.getElementById('button').addEventListener("click", function () {
   // al click border 1px solid red per 1 sec
-  console.log(this);
-  var border = this;
-  console.log(border);
+  // console.log(this);
+  var border = this; // console.log(border);
+
   border.style.backgroundColor = 'rgba(227,164,48,.5)';
   setTimeout(function () {
     border.style.backgroundColor = '';
@@ -141,9 +141,9 @@ document.getElementById('button').addEventListener("click", function () {
 });
 document.getElementById('button-due').addEventListener("click", function () {
   // al click border 1px solid red per 1 sec
-  console.log(this);
-  var border = this;
-  console.log(border);
+  // console.log(this);
+  var border = this; // console.log(border);
+
   border.style.backgroundColor = 'rgba(227,164,48,.5)';
   setTimeout(function () {
     border.style.backgroundColor = '';
@@ -183,9 +183,9 @@ document.getElementById('button-due').addEventListener("click", function () {
 });
 document.getElementById('button-tre').addEventListener("click", function () {
   // al click border 1px solid red per 1 sec
-  console.log(this);
-  var border = this;
-  console.log(border);
+  // console.log(this);
+  var border = this; // console.log(border);
+
   border.style.backgroundColor = 'rgba(227,164,48,.5)';
   setTimeout(function () {
     border.style.backgroundColor = '';
