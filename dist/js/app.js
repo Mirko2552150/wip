@@ -94,6 +94,16 @@
 /***/ (function(module, exports) {
 
 document.getElementById('button').addEventListener("click", function () {
+  // al click border 1px solid red per 1 sec
+  console.log(this);
+  var border = this;
+  console.log(border);
+  setTimeout(function () {
+    setTimeout(function () {
+      border.style.backgroundColor = '';
+    }, 10);
+    border.style.backgroundColor = 'rgba(227,164,48,.5)';
+  }, 100);
   var dataSku = document.querySelector('.content').getAttribute('data-sku'); // console.log(dataSku);
 
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSku).then(function (response) {
@@ -132,6 +142,16 @@ document.getElementById('button').addEventListener("click", function () {
   });
 });
 document.getElementById('button-due').addEventListener("click", function () {
+  // al click border 1px solid red per 1 sec
+  console.log(this);
+  var border = this;
+  console.log(border);
+  setTimeout(function () {
+    setTimeout(function () {
+      border.style.backgroundColor = '';
+    }, 10);
+    border.style.backgroundColor = 'rgba(227,164,48,.5)';
+  }, 100);
   var dataSkuDue = document.querySelector('.content-due').getAttribute('data-sku'); // console.log(dataSkuDue);
 
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSkuDue).then(function (response) {
@@ -166,6 +186,16 @@ document.getElementById('button-due').addEventListener("click", function () {
   });
 });
 document.getElementById('button-tre').addEventListener("click", function () {
+  // al click border 1px solid red per 1 sec
+  console.log(this);
+  var border = this;
+  console.log(border);
+  setTimeout(function () {
+    setTimeout(function () {
+      border.style.backgroundColor = '';
+    }, 10);
+    border.style.backgroundColor = 'rgba(227,164,48,.5)';
+  }, 100);
   var dataSkuTre = document.querySelector('.content-tre').getAttribute('data-sku'); // console.log(dataSkuTre);
 
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSkuTre).then(function (response) {
