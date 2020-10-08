@@ -35,14 +35,14 @@ document.getElementById('button').addEventListener("click", function(){
 });
 
 document.getElementById('button-due').addEventListener("click", function(){
-
   var dataSkuDue = document.querySelector('.content-due').getAttribute('data-sku');
   // console.log(dataSkuDue);
 
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSkuDue)
   .then(response => response.json())
   .then(response => {
-    console.log(response);
+    // console.log(response);
+    // console.log(this);
     var title = response.title;
     var body = response.body;
     var id = response.id;
@@ -80,7 +80,7 @@ document.getElementById('button-tre').addEventListener("click", function(){
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSkuTre)
   .then(response => response.json())
   .then(response => {
-      console.log(response);
+      // console.log(response);
       var title = response.title;
       var body = response.body;
       var id = response.id;
@@ -94,13 +94,13 @@ document.getElementById('button-tre').addEventListener("click", function(){
 
       } else {
 
-        if (faqToggleDue.classList.contains('active') || faqToggleTre.classList.contains('active')) {
+        if (faqToggle.classList.contains('active') || faqToggleDue.classList.contains('active')) {
           faqToggle.classList.remove('active');
           faqToggleDue.classList.remove('active');
           faqToggle.innerHTML= ""; // cancella in contenuto stampato
           faqToggleDue.innerHTML= ""; // cancella in contenuto stampato
         }
-        
+
         faqToggleTre.classList.add('active');
         setTimeout(function(){ faqToggleTre.innerHTML= 'POST' + "" + id + '<br>' + title + '<br>' + body; }, 300);
 

@@ -137,7 +137,8 @@ document.getElementById('button-due').addEventListener("click", function () {
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSkuDue).then(function (response) {
     return response.json();
   }).then(function (response) {
-    console.log(response);
+    // console.log(response);
+    // console.log(this);
     var title = response.title;
     var body = response.body;
     var id = response.id;
@@ -170,7 +171,7 @@ document.getElementById('button-tre').addEventListener("click", function () {
   fetch('https://jsonplaceholder.typicode.com/posts/' + dataSkuTre).then(function (response) {
     return response.json();
   }).then(function (response) {
-    console.log(response);
+    // console.log(response);
     var title = response.title;
     var body = response.body;
     var id = response.id;
@@ -182,7 +183,7 @@ document.getElementById('button-tre').addEventListener("click", function () {
       faqToggleTre.classList.remove('active');
       faqToggleTre.innerHTML = "";
     } else {
-      if (faqToggleDue.classList.contains('active') || faqToggleTre.classList.contains('active')) {
+      if (faqToggle.classList.contains('active') || faqToggleDue.classList.contains('active')) {
         faqToggle.classList.remove('active');
         faqToggleDue.classList.remove('active');
         faqToggle.innerHTML = ""; // cancella in contenuto stampato
