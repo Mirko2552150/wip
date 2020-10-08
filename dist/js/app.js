@@ -98,11 +98,9 @@ document.getElementById('button').addEventListener("click", function () {
   console.log(this);
   var border = this;
   console.log(border);
+  border.style.backgroundColor = 'rgba(227,164,48,.5)';
   setTimeout(function () {
-    setTimeout(function () {
-      border.style.backgroundColor = '';
-    }, 10);
-    border.style.backgroundColor = 'rgba(227,164,48,.5)';
+    border.style.backgroundColor = '';
   }, 100);
   var dataSku = document.querySelector('.content').getAttribute('data-sku'); // console.log(dataSku);
 
@@ -146,11 +144,9 @@ document.getElementById('button-due').addEventListener("click", function () {
   console.log(this);
   var border = this;
   console.log(border);
+  border.style.backgroundColor = 'rgba(227,164,48,.5)';
   setTimeout(function () {
-    setTimeout(function () {
-      border.style.backgroundColor = '';
-    }, 10);
-    border.style.backgroundColor = 'rgba(227,164,48,.5)';
+    border.style.backgroundColor = '';
   }, 100);
   var dataSkuDue = document.querySelector('.content-due').getAttribute('data-sku'); // console.log(dataSkuDue);
 
@@ -190,11 +186,9 @@ document.getElementById('button-tre').addEventListener("click", function () {
   console.log(this);
   var border = this;
   console.log(border);
+  border.style.backgroundColor = 'rgba(227,164,48,.5)';
   setTimeout(function () {
-    setTimeout(function () {
-      border.style.backgroundColor = '';
-    }, 10);
-    border.style.backgroundColor = 'rgba(227,164,48,.5)';
+    border.style.backgroundColor = '';
   }, 100);
   var dataSkuTre = document.querySelector('.content-tre').getAttribute('data-sku'); // console.log(dataSkuTre);
 

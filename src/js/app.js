@@ -5,13 +5,11 @@ document.getElementById('button').addEventListener("click", function(){
   var border = this;
   console.log(border);
 
+  border.style.backgroundColor = 'rgba(227,164,48,.5)';
+
   setTimeout(function(){
+    border.style.backgroundColor = '';
 
-    setTimeout(function(){
-      border.style.backgroundColor = '';
-    }, 10);
-
-    border.style.backgroundColor = 'rgba(227,164,48,.5)';
   }, 100);
 
 
@@ -57,14 +55,11 @@ document.getElementById('button-due').addEventListener("click", function(){
   var border = this;
   console.log(border);
 
+  border.style.backgroundColor = 'rgba(227,164,48,.5)';
+
   setTimeout(function(){
+    border.style.backgroundColor = '';
 
-    setTimeout(function(){
-
-      border.style.backgroundColor = '';
-    }, 10);
-
-    border.style.backgroundColor = 'rgba(227,164,48,.5)';
   }, 100);
 
   var dataSkuDue = document.querySelector('.content-due').getAttribute('data-sku');
@@ -111,14 +106,14 @@ document.getElementById('button-tre').addEventListener("click", function(){
   var border = this;
   console.log(border);
 
+  border.style.backgroundColor = 'rgba(227,164,48,.5)';
+
   setTimeout(function(){
 
-    setTimeout(function(){
 
-      border.style.backgroundColor = '';
-    }, 10);
+    border.style.backgroundColor = '';
 
-    border.style.backgroundColor = 'rgba(227,164,48,.5)';
+
   }, 100);
 
   var dataSkuTre = document.querySelector('.content-tre').getAttribute('data-sku');
